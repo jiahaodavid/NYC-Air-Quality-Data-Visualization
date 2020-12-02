@@ -15,6 +15,11 @@
     
     
 ### How to run:
-    - python3 `filename`
+    - Git clone the repository
+    - Change directory to the MainCode folder in a terminal
+    - Make sure a compatible version of Python is already installed
+    - Run "pip install -r requirements.txt" (virtual environment is recommended)
+    - Once all dependencies are installed, run the MainApp.py file
+    - Go to the url that the app is hosting to see visualizations
 
 
