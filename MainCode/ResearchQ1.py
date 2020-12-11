@@ -47,11 +47,22 @@ def graph_1_1():
     return fig
 
 def graph_1_2():
-    fig = px.scatter(research_q1_data, x="Average Income", y="PM 2.5 µg/m^3", hover_name="Borough", trendline="ols", title="NYC Air Quality vs Income (2017)")
+    fig = px.scatter(research_q1_data, x="Average Income",
+                     y="PM 2.5 µg/m^3",
+                     hover_name="Borough",
+                     trendline="ols",
+                     title="NYC Air Quality vs Income (2017)",
+                     color_discrete_sequence=['red'],
+                     size=[100,100,100,100,100])
     return fig
 
 def graph_1_3():
-    fig = px.scatter(research_q1_data, x="Total Population", y="PM 2.5 µg/m^3", hover_name="Borough", trendline="ols", title="NYC Air Quality vs Population (2017)")
+    fig = px.scatter(research_q1_data, x="Total Population",
+                     y="PM 2.5 µg/m^3", hover_name="Borough",
+                     trendline="ols",
+                     title="NYC Air Quality vs Population (2017)",
+                     color_discrete_sequence=['red'],
+                     size=[100,100,100,100,100])
     return fig
 
 def graph_1_4():
