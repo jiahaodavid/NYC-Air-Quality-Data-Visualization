@@ -66,5 +66,9 @@ def graph_1_3():
     return fig
 
 def graph_1_4():
-    fig = px.bar(research_q1_data, x="Borough", y="PM 2.5 µg/m^3", title="NYC Air Quality vs Borough (2017)")
+    fig = px.bar(research_q1_data, x="Borough",
+                 y="PM 2.5 µg/m^3",
+                 title="NYC Air Quality vs Borough (2017)",
+                 hover_data=['Total Population', 'Average Income'])
+    fig.update_layout(xaxis={'categoryorder':'total descending'})
     return fig
