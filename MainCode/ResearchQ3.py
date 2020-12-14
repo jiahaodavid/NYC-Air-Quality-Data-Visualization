@@ -37,6 +37,19 @@ def graph_3_1():
         hoverinfo='text'
     ))
 
+    fig.add_trace(go.Scattermapbox(
+        lat=[40.7730,40.6398,40.6895314],
+        lon=[-73.8702,-73.7887,-74.1744623],
+        mode='markers',
+        marker={
+            'size':30,
+            'symbol': ['airport','airport','airport']
+            },
+        hoverinfo='none'
+    ))
+
+
+
     fig.update_layout(
         title='2019 Avg PM2.5 Concentration in NYC',
         autosize=True,
