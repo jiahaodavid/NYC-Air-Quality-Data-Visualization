@@ -31,6 +31,7 @@ def graph_3_1():
             size=15,
             color=PM,
             showscale=True,
+            colorscale= 'YlOrRd',
             colorbar={'title': 'Avg of PM2.5 Concentration', 'titleside': 'top', 'thickness': 4, 'ticksuffix': ' ug/m3'}
         ),
         text=locations_name,
